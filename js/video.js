@@ -2,7 +2,12 @@ var video = document.querySelector("#player1")
 
 window.addEventListener("load", function() {
 	console.log("Good job opening the window")
+	
+});
 
+window.addEventListener("load", function() {
+	volume.innerHTML = 100 + "%"
+	
 });
 
 document.querySelector("#play").addEventListener("click", function() {
@@ -44,12 +49,12 @@ document.querySelector("#mute").addEventListener("click", function(){
 		console.log("Mute");
 		video.muted = true;
 		console.log("video muted " + video.muted);
-		document.querySelector("#mute").innerHTML = "unmute"
+		document.querySelector("#mute").innerHTML = "Unmute"
 	}
 	else{
 		video.muted = false;
 		console.log("video muted " + video.muted);
-		document.querySelector("#mute").innerHTML = "mute";
+		document.querySelector("#mute").innerHTML = "Mute";
 	}
 })
 
